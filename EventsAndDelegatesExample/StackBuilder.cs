@@ -22,6 +22,11 @@ namespace EventsAndDelegatesExample
 
         public delegate void StackOverflowedEventHandler(object source, StackEventArgs args);
 
+        // EventHandler
+        // EventHandler<TEventArgs>
+        // Instead of creating a delegate can use public event EventHandler<StackEventArgs> StackOverflowed
+        // or public event EventHandler StackOverflowed if not using custom EventArgs
+
         public event StackOverflowedEventHandler StackOverflowed;
 
         protected internal void AddStackItems(int numberOfItems)
