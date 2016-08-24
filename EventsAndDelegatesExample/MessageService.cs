@@ -4,9 +4,9 @@
 
     public class MessageService
     {
-        public void OnStackOverflowed(object source, EventArgs e)
+        public void OnStackOverflowed(object source, StackEventArgs e)
         {
-            Console.WriteLine("Alert! Alert! The stack has overflowed. Run for your lives!!");
+            Console.WriteLine($"Alert! Alert! The stack has overflowed at {e.Stack.StackItems}. Run for your lives!!");
         }
     }
 }

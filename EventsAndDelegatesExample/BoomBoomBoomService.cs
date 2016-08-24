@@ -4,9 +4,12 @@
 
     public class BoomBoomBoomService
     {
-        public void OnStackOverflowed(object source, EventArgs e)
+        public void OnStackOverflowed(object source, StackEventArgs e)
         {
-            Console.WriteLine("Boom, boom, boom! Let me hear you say wayo!");
+            for (int i = 0; i < e.Stack.StackItems; i++)
+            {
+                Console.WriteLine("Boom, boom, boom. Let me hear you say wayo. Wayo!!");
+            }
         }
     }
 }

@@ -7,23 +7,24 @@ namespace EventsAndDelegatesExample
         static void Main(string[] args)
         {
             //https://www.youtube.com/watch?v=jQgwEsJISy0
-            var stack = new Stack(); //publisher
+            var stack = new Stack();
+            var stackBuilder = new StackBuilder(stack); //publisher
             var messageService = new MessageService(); //subscriber
             var boomBoomBoomService = new BoomBoomBoomService(); //another subscriber
 
             //register subscribers
-            stack.StackOverflowed += messageService.OnStackOverflowed;
-            stack.StackOverflowed += boomBoomBoomService.OnStackOverflowed;
+            stackBuilder.StackOverflowed += messageService.OnStackOverflowed;
+            stackBuilder.StackOverflowed += boomBoomBoomService.OnStackOverflowed;
 
 
-            while (!stack.Overflow)
+            while (!stackBuilder.Stack.Overflow)
             {
                 Console.WriteLine("Enter an number:");
                 var numberOfItems = 0;
 
                 int.TryParse(Console.ReadLine(), out numberOfItems);
 
-                stack.AddStackItems(numberOfItems);
+                stackBuilder.AddStackItems(numberOfItems);
             }
 
             Console.WriteLine("Press any key to exit...");

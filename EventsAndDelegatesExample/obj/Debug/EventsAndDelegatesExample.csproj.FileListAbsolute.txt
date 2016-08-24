@@ -7,3 +7,6 @@ D:\Dev\Test Projects\EventsAndDelegatesExample\EventsAndDelegatesExample\EventsA
 D:\Dev\Test Projects\EventsAndDelegatesExample\EventsAndDelegatesExample\bin\Debug\EventsAndDelegatesExample.exe.config
 D:\Dev\Test Projects\EventsAndDelegatesExample\EventsAndDelegatesExample\obj\Debug\EventsAndDelegatesExample.exe
 D:\Dev\Test Projects\EventsAndDelegatesExample\EventsAndDelegatesExample\obj\Debug\EventsAndDelegatesExample.pdb
+D:\Dev\Test Projects\EventsAndDelegatesExample\EventsAndDelegatesExample\obj\Debug\EventsAndDelegatesExample.csprojResolveAssemblyReference.cache
+D:\Dev\Test Projects\EventsAndDelegatesExample\EventsAndDelegatesExample\bin\Debug\EventsAndDelegatesExample.exe
+D:\Dev\Test Projects\EventsAndDelegatesExample\EventsAndDelegatesExample\bin\Debug\EventsAndDelegatesExample.pdb
